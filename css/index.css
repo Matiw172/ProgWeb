@@ -1,0 +1,29 @@
+main{
+    margin: 25px ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.m-article {
+    width: 450px;
+    background-color: aquamarine;
+    border-radius: 25px;
+    overflow: hidden; /* Asegura que el contenido no se desborde del área con borde redondeado */
+}
+.m-article h2{
+    text-align: center;
+}
+.m-article img {
+    width: 100%; /* Agrega un borde redondeado solo en la parte superior de la imagen */
+}
+
+.m-article p {
+    padding: 15px;
+    margin: 0;
+}
+
+/* Agrega una gradiente de color al borde */
+.m-article {
+    border-image: linear-gradient(to right, #ff00ff, #ff0000);
+    border-image-slice: 1;
+}

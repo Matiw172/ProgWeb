@@ -1,2 +1,166 @@
-/*Selector de etiqueta*/
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #146C94;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+a{
+    user-select: none;
+}
 
+.content {
+    flex: 1;
+}
+
+header {
+    margin: 0;
+    display: flex;
+    background-color: #F6F1F1;
+    align-items: center;
+    font-family: 'Dosis', sans-serif;
+    justify-content: space-between;
+    font-size: medium;
+    color: black
+}
+
+
+header .h-info {
+    margin-left: 15px;
+}
+
+header .h-info span {
+    margin-right: 20px;
+}
+
+header .h-social {
+    font-size: large;
+    padding: 5px;
+    padding-right: 15px;
+}
+
+header .h-social {
+    margin-left: 20px;
+    transition: color 0.2s;
+}
+
+header .h-social a {
+    margin-left: 20px;
+    transition: color 0.2s;
+    user-select: none;
+}
+
+header .h-social a:hover {
+    color: #19A7CE
+}
+
+
+nav {
+    display: flex;
+    background-color: #19A7CE;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-weight: 800;
+    border-radius: 25px;
+}
+
+nav img {
+    margin-left: 10px;
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    height: max-content;
+}
+
+nav li {
+    margin-right: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    font-size: large;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 0 0 1em blue;
+}
+
+main {
+    background-color: transparent;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: black;
+    border-radius: 25px 25px 0 0;
+    color: white;
+    display: block;
+    justify-content: space-around;
+    text-align: center; /* Añadido para centrar horizontalmente .footer-social */
+}
+
+footer .footer-info {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Divide el footer en cuatro columnas de igual ancho */
+    gap: 50px;
+    /* Espaciado entre las columnas */
+    text-align: center;
+    /* Centra el texto dentro de cada columna */
+}
+
+footer .footer-info div {
+
+    display: block;
+}
+
+footer .footer-info span {
+    display: block;
+    margin-bottom: 5px;
+    /* Espaciado inferior entre las filas */
+}
+
+
+
+footer .footer-info strong {
+    
+    display: block;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    /* Espaciado inferior entre las filas */
+}
+
+footer .footer-social {
+    border-width: 2px;
+    border-style: double none none none;
+    border-color: white transparent transparent transparent;
+    display: inline-block;
+    text-align: center;
+}
+
+footer .footer-social a {
+    padding: 20px;
+    transition: color 0.3s;
+    font-size: large;
+}
+
+footer .footer-social a:hover {
+    color: #19A7CE;
+}
+
+footer .copyright{
+    background-color: #0a0a0a;
+}
