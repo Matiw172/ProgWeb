@@ -1,0 +1,148 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5vh;
+    justify-content: space-around;
+    row-gap: 50px;
+    font-family: 'Dosis', sans-serif;
+    color: white;
+}
+
+.m-product {
+    width:25vw;
+    background: rgb(57, 0, 212);
+    background: linear-gradient(225deg, rgba(57, 0, 212, 1) 0%, rgba(9, 120, 121, 1) 30%, rgba(0, 212, 255, 1) 100%);
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(243, 3, 211);
+    display: flex;
+}
+.m-product .description {
+    margin: 0.5vw;
+}
+
+
+.m-product .description .price {
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
+    row-gap: 1vh;
+}
+
+.m-product .description p {
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: inline-block;
+    border-width: 2px;
+    border-style: double none none none;
+    border-color: white transparent transparent transparent;
+}
+
+
+.m-product .description .title {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+
+}
+
+.m-product .description h4 {
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+.m-product .description .price span {
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 38px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18, 2px -8px 1px rgba(206, 0, 0, 0.17);
+    color: red;
+}
+
+
+.m-product .description .price button {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 38px;
+}
+
+.m-product .description .price button:hover{
+    background-color: #c8c8c8;
+}
+
+.m-product .description .price button:active{
+    background-color: #49FF18;
+}
+
+.m-product h2 {
+    text-align: center;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+.m-product img {
+    width: 50%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.m-product .description p {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+
+.m-product {
+    border-image: linear-gradient(to right, #ff00ff, #ff0000);
+    border-image-slice: 1;
+}
+
+
+
+
+@media ((min-width: 1280px) and (max-width: 1439px) )or  ((min-width: 720px) and (max-width: 991px)) or  ((min-width: 1023px)){
+    .m-product {
+        width:45vw;
+        flex-direction: column;
+    }
+}
+
+/*responsividad*/
+@media (max-width: 767px) {
+    .m-product {
+        width:80vw;
+        flex-direction: column;
+    }
+
+    .m-product img {
+        width: 50%;
+        border-radius: 15px;
+        margin: auto;
+    }
+
+    .m-product .description p {
+        text-align: center;
+        color: white;
+        font-size: 75%;
+        margin: 0;
+    }
+    
+    
+    .m-product .description .title {
+        text-align: center;
+        color: white;
+        font-size: 100%;
+        margin: 0px;
+    }
+}

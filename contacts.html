@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Test Content">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/contacts.css">
     <title>My Page | Inicio</title>
     <script src="https://kit.fontawesome.com/a5a6130222.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,80 +16,132 @@
 </head>
 
 <body>
-    <header>
-        <div class="h-info">
-            <span><strong>Email: </strong>testmail@testserver.xyz</span>
-            <span><strong>Phone: </strong>(+593) 02-856-9770</span>
+    <div class="content">
+        <header>
+            <div class="h-info">
+                <div>
+                    <span class="title"><strong>Email:</strong></span>
+                    <span class="value">testmail@testserver.xyz</span>
+                </div>
+                <div>
+                    <span class="title"><strong>Telefono:</strong></span>
+                    <span class="value">(+593)02856977</span>
+                </div>
+            </div>
+            <div class="h-social">
+                <a class="fa-brands fa-youtube"></a>
+                <a class="fa-brands fa-facebook"></a>
+                <a class="fa-brands fa-instagram"></a>
+                <a class="fa-brands fa-tiktok"></a>
+                <a class="fa-brands fa-twitter"></a>
+            </div>
+        </header>
+        <nav>
+            <img src="sources/images/logo.png" width="100" alt="">
+
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">PRODUCTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="contacts.html">CONTANCTS</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="myform">
+                <form action="" method="get">
+                    <div class="inrow">
+                        <div class="field-block">
+                            <label>NOMBRES:</label>
+                            <input type="text" placeholder="Ingresa Nombres" name="nombre" value="Mateo">
+                        </div>
+                        <div class="field-block">
+                            <label>APELLIDOS:</label>
+                            <input type="text" placeholder="Ingresa Apellidos" name="apellido" value="Alvarado">
+                        </div>
+                    </div>
+
+                    <label>EMAIL:</label>
+                    <input type="email" placeholder="Ingresa Email" name="email" value="matiw@test.xyz">
+                    <div class="inrow">
+                        <div class="field-block">
+                            <label>EDAD</label>
+                            <input type="number" placeholder="Ingresa edad" name="edad" value="25">
+                        </div>
+                        <div class="field-block">
+                            <label>FECHA NACIMIENTO:</label>
+                            <input type="date" placeholder="Ingresa Fecha de Nacimiento" name="fecha"
+                                value="2021-01-01">
+                        </div>
+                    </div>
+                    <label>HORA DE INSCRIPCION</label>
+                    <input type="time" placeholder="Ingresa Hora de Inscripcion" name="hora" value="20:00">
+
+                    <label>SEXO:</label>
+                    <select>
+                        <option value="MASCULINO">MASCULINO</option>
+                        <option value="FEMENINO">FEMENINO</option>
+                    </select>
+
+                    <div class="choicer">
+                        <label>ETNIA:</label>
+                        <div class="c-selector">
+                            <div class="myinput"><input type="radio" name="etnia">Blanco</div>
+                            <div class="myinput"><input type="radio" name="etnia">Mestizo</div>
+                            <div class="myinput"><input type="radio" name="etnia">N E G R O</div>
+                            <div class="myinput"><input type="radio" name="etnia">Mulato</div>
+                        </div>
+
+                    </div>
+                    <div class="choicer">
+                        <label>DEPORTES:</label>
+                        <div class="c-selector">
+                            <div class="myinput"><input type="checkbox" name="deportes">Football</div>
+                            <div class="myinput"><input type="checkbox" name="deportes">Basketball</div>
+                            <div class="myinput"><input type="checkbox" name="deportes">Tennis</div>
+                            <div class="myinput"><input type="checkbox" name="deportes">Golf</div>
+                        </div>
+                    </div>
+                    <label>Cuentanos de ti:</label>
+                    <textarea name="about" id="about" cols="30" rows="10"></textarea>
+                    <br>
+                    <button type="submit" name="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-info">
+            <div>
+                <span class="title"><strong>Email:</strong></span>
+                <span class="value">testmail@testserver.xyz</span>
+            </div>
+            <div>
+                <span class="title"><strong>Telefono:</strong></span>
+                <span class="value">(+593)02856977</span>
+            </div>
+            <div>
+                <span class="title"><strong>Direccion:</strong></span>
+                <span class="value">Quito</span>
+            </div>
+            <div>
+                <span><strong>Ubicacion:</strong></span>
+                <span class="value">Nose</span>
+            </div>
         </div>
-        <div class="h-social">
+        <div class="footer-social">
             <a class="fa-brands fa-youtube"></a>
             <a class="fa-brands fa-facebook"></a>
             <a class="fa-brands fa-instagram"></a>
             <a class="fa-brands fa-tiktok"></a>
             <a class="fa-brands fa-twitter"></a>
         </div>
-    </header>
-    <nav>
-        <img src="sources/images/logo.png" width="100" alt="">
 
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="products.html">PRODUCTS</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="#">CONTANCTS</a></li>
-        </ul>
-    </nav>
-    <section>
-        <form action = "" method="get">
-            <label>APELLIDOS:</label>
-            <input type="text" placeholder="Ingresa Apellidos" name="apellido" value="Alvarado">
-            <br>
-            <label>NOMBRES:</label>
-            <input type="text" placeholder="Ingresa Nombres" name="nombre" value="Mateo">
-            <br>
-            <label>EMAIL:</label>
-            <input type="email" placeholder="Ingresa Email" name="email" value="matiw@test.xyz">
-            <br>
-            <label>EDAD</label>
-            <input type="number" placeholder="Ingresa edad" name="edad" value="25">
-            <br>
-            <label>FECHA NACIMIENTO:</label>
-            <input type="date" placeholder="Ingresa Fecha de Nacimiento" name="fecha" value="2021-01-01">
-            <br>
-            <label>HORA DE INSCRIPCION</label>
-            <input type="time" placeholder="Ingresa Hora de Inscripcion" name="hora" value="20:00">
-            <br>
-            <label>SEXO:</label>
-            <select>
-                <option value="MASCULINO">MASCULINO</option>
-                <option value="FEMENINO">FEMENINO</option>
-            </select>
-            <br>
-            <label>ETNIA:</label>
-            <input type="radio" name="etnia">Blanco
-            <input type="radio" name="etnia">Mestizo
-            <input type="radio" name="etnia">N E G R O 
-            <input type="radio" name="etnia">Mulato 
-            <br>
-            <label>DEPORTES:</label>
-            <input type="checkbox" name="deportes">Football
-            <input type="checkbox" name="deportes">Basketball
-            <input type="checkbox" name="deportes">Tennis
-            <input type="checkbox" name="deportes">Golf
-            <br>
-            <label>Cuentanos de ti:</label>
-            <textarea name="about" id="about" cols="30" rows="10"></textarea>
-            <br>
-            <button type="submit" name="submit">Enviar</button>
-        </form>
-    </section>
-    <footer>
-        <span><strong>Email:</strong>testmail@testserver.xyz</span>
-        <span><strong>Telefono:</strong>(+593)02856977</span>
-        <span><strong>Direccion:</strong>Quito</span>
-        <span><strong>Ubicacion:</strong>Nose</span>
+        <div class="copyright">
+            <span>Copyright © MTTProjects 2023</span>
+        </div>
     </footer>
+
 </body>
 
 </html>
-

@@ -29,6 +29,7 @@ main {
     background: linear-gradient(225deg, rgba(57, 0, 212, 1) 0%, rgba(9, 120, 121, 1) 30%, rgba(0, 212, 255, 1) 100%);
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: 0 0 10px rgb(243, 3, 211);
     /* Asegura que el contenido no se desborde del área con borde redondeado */
 }
 
