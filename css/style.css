@@ -226,9 +226,6 @@ footer .copyright span{
 /* Responsividad para Dispositivos Móviles (Horizontal) */
 @media (min-width: 720px) and (max-width: 991px) {
 
-    header {
-        background-color: green;
-    }
     header div {
         margin: 0 auto;
     }
@@ -249,7 +246,6 @@ footer .copyright span{
 @media (min-width: 1280px) and (max-width: 1439px) {
 
     header {
-        background-color: aqua;
         padding-top: 0;
         padding-bottom: 0;
     }
@@ -276,9 +272,7 @@ footer .copyright span{
 /* Responsividad para Pantallas Grandes */
 @media (min-width: 1440px) and (max-width: 1919px) {
 
-    header {
-        background-color: tomato
-    }
+
     header .h-info,
     header .h-social {
         font-size: 1vw;
@@ -305,9 +299,7 @@ footer .copyright span{
 
 /* Responsividad para Pantallas de Escritorio */
 @media (min-width: 1920px) {
-    header {
-        background-color: yellow
-    }
+
     header .h-info,
     header .h-social {
         font-size: .75vw;
