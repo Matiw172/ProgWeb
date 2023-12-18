@@ -1,15 +1,29 @@
+html{
+    overscroll-behavior: none;
+}
+
+body{
+    overscroll-behavior: none;
+}
+
 main{
     margin: 25px ;
     display: flex;
     justify-content: space-around;
+    row-gap: 25px;
+    column-gap: 25px;
 }
 
 .m-article {
-    width: 450px;
-    background-color: aquamarine;
+    width: 50vw;
+    background: rgb(57,0,212);
+    background: linear-gradient(225deg, rgba(57,0,212,1) 0%, rgba(9,120,121,1) 30%, rgba(0,212,255,1) 100%);
     border-radius: 25px;
     overflow: hidden; /* Asegura que el contenido no se desborde del área con borde redondeado */
 }
+
+
+
 .m-article h2{
     text-align: center;
 }
@@ -26,4 +40,22 @@ main{
 .m-article {
     border-image: linear-gradient(to right, #ff00ff, #ff0000);
     border-image-slice: 1;
+}
+
+/*RESPONSIVIDAD*/ 
+/*Si la vista es menor a 950px*/
+@media (max-width: 950px) {
+    main{
+        margin: 25px ;
+        display: block;
+        justify-content: space-around;
+        row-gap: 25px;
+        column-gap: 25px;
+    }
+
+    .m-article {
+        width: 80vw;
+        margin: 5% auto; /* Esto centrará el div horizontalmente */
+        padding-bottom: 5%;
+    }
 }

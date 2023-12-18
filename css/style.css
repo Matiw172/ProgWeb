@@ -22,14 +22,22 @@ header {
     background-color: #F6F1F1;
     align-items: center;
     font-family: 'Dosis', sans-serif;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: medium;
     color: black
 }
 
 
+
+
 header .h-info {
     margin-left: 15px;
+    display: felx;
+}
+
+header .h-info div {
+    display: inline-flex;
+    margin: 0 auto;
 }
 
 header .h-info span {
@@ -38,8 +46,7 @@ header .h-info span {
 
 header .h-social {
     font-size: large;
-    padding: 5px;
-    padding-right: 15px;
+    margin-right: 15px;
 }
 
 header .h-social {
@@ -164,3 +171,12 @@ footer .footer-social a:hover {
 footer .copyright{
     background-color: #0a0a0a;
 }
+
+/*RESPONSIVIDAD*/
+/*Si es menor a 950px*/
+@media (max-width: 950px) {
+    header div{
+        margin: 0 auto; /* Esto centrará el div horizontalmente */
+    }
+}
+
