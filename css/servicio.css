@@ -1,0 +1,30 @@
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor_hijo {
+    flex: 0 0 25%;
+    text-align: left;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+    padding: 100px;
+    border: 0.5px solid gray;
+    border-radius: 15px;
+}
+
+.contenedor_hijo h1{
+    text-align: center;
+    color: #bbb0b0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #bbb0b0;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.contenedor_hijo p{
+    color: #e2e2e2;
+}
