@@ -1,34 +1,46 @@
-html{
+html {
     overscroll-behavior: none;
 }
 
-body{
+body {
     overscroll-behavior: none;
+    padding: 0;
+    margin: 0;
+    background-color: #146C94;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
 }
 
-main{
-    margin: 25px ;
+main {
+    margin: 25px;
     display: flex;
     justify-content: space-around;
     row-gap: 25px;
     column-gap: 25px;
+    flex-wrap: wrap;
 }
 
 .m-article {
-    width: 50vw;
-    background: rgb(57,0,212);
-    background: linear-gradient(225deg, rgba(57,0,212,1) 0%, rgba(9,120,121,1) 30%, rgba(0,212,255,1) 100%);
+    width: 45vw;
+    background: rgb(57, 0, 212);
+    background: linear-gradient(225deg, rgba(57, 0, 212, 1) 0%, rgba(9, 120, 121, 1) 30%, rgba(0, 212, 255, 1) 100%);
     border-radius: 25px;
-    overflow: hidden; /* Asegura que el contenido no se desborde del área con borde redondeado */
+    overflow: hidden;
+    /* Asegura que el contenido no se desborde del área con borde redondeado */
 }
 
 
 
-.m-article h2{
+.m-article h2 {
     text-align: center;
 }
+
 .m-article img {
-    width: 100%; /* Agrega un borde redondeado solo en la parte superior de la imagen */
+    width: 100%;
+    /* Agrega un borde redondeado solo en la parte superior de la imagen */
 }
 
 .m-article p {
@@ -42,11 +54,11 @@ main{
     border-image-slice: 1;
 }
 
-/*RESPONSIVIDAD*/ 
+/*RESPONSIVIDAD*/
 /*Si la vista es menor a 950px*/
 @media (max-width: 950px) {
-    main{
-        margin: 25px ;
+    main {
+        margin: 25px;
         display: block;
         justify-content: space-around;
         row-gap: 25px;
@@ -55,7 +67,8 @@ main{
 
     .m-article {
         width: 80vw;
-        margin: 5% auto; /* Esto centrará el div horizontalmente */
+        margin: 5% auto;
+        /* Esto centrará el div horizontalmente */
         padding-bottom: 5%;
     }
 }

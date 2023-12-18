@@ -7,8 +7,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
- 
-a{
+
+a {
     user-select: none;
 }
 
@@ -22,13 +22,10 @@ header {
     background-color: #F6F1F1;
     align-items: center;
     font-family: 'Dosis', sans-serif;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: medium;
     color: black
 }
-
-
-
 
 header .h-info {
     margin-left: 15px;
@@ -46,18 +43,13 @@ header .h-info span {
 
 header .h-social {
     font-size: large;
-    margin-right: 15px;
-}
-
-header .h-social {
-    margin-left: 20px;
+    margin-right: 0.75dvw;
     transition: color 0.2s;
 }
+
 
 header .h-social a {
-    margin-left: 20px;
     transition: color 0.2s;
-    user-select: none;
 }
 
 header .h-social a:hover {
@@ -115,23 +107,26 @@ footer {
     color: white;
     display: block;
     justify-content: space-around;
-    text-align: center; /* Añadido para centrar horizontalmente .footer-social */
+    text-align: center;
+    flex-wrap: wrap;
+    /* Añadido para centrar horizontalmente .footer-social */
 }
 
 footer .footer-info {
     padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     /* Divide el footer en cuatro columnas de igual ancho */
     gap: 50px;
     /* Espaciado entre las columnas */
     text-align: center;
+    justify-content: center;
     /* Centra el texto dentro de cada columna */
 }
 
 footer .footer-info div {
-
-    display: block;
+    display: inline-block;
+    margin: auto;
 }
 
 footer .footer-info span {
@@ -143,9 +138,10 @@ footer .footer-info span {
 
 
 footer .footer-info strong {
-    
-    display: block;
-    margin-bottom: 5px;
+
+
+    display: inline-flex;
+    margin: 0 auto;
     justify-content: space-between;
     /* Espaciado inferior entre las filas */
 }
@@ -168,15 +164,113 @@ footer .footer-social a:hover {
     color: #19A7CE;
 }
 
-footer .copyright{
+footer .copyright {
     background-color: #0a0a0a;
 }
 
 /*RESPONSIVIDAD*/
 /*Si es menor a 950px*/
-@media (max-width: 950px) {
-    header div{
-        margin: 0 auto; /* Esto centrará el div horizontalmente */
+
+
+/* Responsividad para Dispositivos Móviles (Vertical) */
+@media (max-width: 767px) {
+
+    nav {
+        justify-content: space-around;
+    }
+
+    header div {
+        margin: 0 auto;
+    }
+
+    nav img {
+        margin-left: 5px;
+        width: 150px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        background-color: #19A7CE;
+        border-radius: 15px;
+    }
+
+    nav li {
+        margin: 10px 0;
     }
 }
 
+
+
+
+
+/* Responsividad para Pantallas Medianas */
+@media (min-width: 1280px) and (max-width: 1439px) {
+
+    header .h-info,
+    header .h-social {
+        font-size: 1.2vw;
+    }
+
+    footer .footer-info {
+        gap: 15px;
+
+    }
+
+    footer .footer-social a {
+        padding: 18px;
+    }
+}
+
+/* Responsividad para Pantallas Grandes */
+@media (min-width: 1440px) and (max-width: 1919px) {
+    
+
+    header .h-info,
+    header .h-social {
+        font-size: 1.5vw;
+    }
+
+    nav {
+        font-size: 2vw;
+    }
+
+    body {
+        font-size: 1vw;
+    }
+
+    footer .footer-info {
+        gap: 20px;
+    }
+
+    footer .footer-social a {
+        padding: 20px;
+    }
+}
+
+/* Responsividad para Pantallas de Escritorio */
+@media (min-width: 1920px) {
+
+    header .h-info,
+    header .h-social {
+        font-size: 1vw;
+    }
+
+    nav a{
+        font-size: 1vw;
+    }
+
+    body {
+        font-size: .75vw;
+    }
+
+    footer .footer-info {
+        gap: 25px;
+    }
+
+    footer .footer-social a {
+        padding: 25px;
+    }
+}
