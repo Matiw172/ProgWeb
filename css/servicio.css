@@ -7,9 +7,8 @@
 .contenedor_hijo {
     flex: 0 0 25%;
     text-align: left;
-    background: #373B44;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4286f4, #373B44);
+    background: rgb(57, 0, 212);
+    background: linear-gradient(225deg, rgba(57, 0, 212, 1) 0%, rgba(9, 120, 121, 1) 30%, rgba(0, 212, 255, 1) 100%);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
     padding: 100px;
     border: 0.5px solid gray;
