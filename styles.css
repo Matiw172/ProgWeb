@@ -33,7 +33,6 @@ z-index: 1035;
 
 
 .con-photo{
-    display: flex;
     border-radius: 25px;
 }
 
@@ -44,7 +43,21 @@ z-index: 1035;
 
 .about-text{
     width: 95%;
+    font-size: large;
 }
+
+.about-text{
+    width: 95%;
+    font-size: large;
+}
+
+@media (max-width: 767px) {
+    .about-text{
+        width: 95%;
+        font-size: medium;
+    }
+}
+
 
 .container-info{
     margin-left: 10px;
@@ -63,6 +76,14 @@ margin-right: 10px;
     border-left: 2px solid white;
     height: 100%;
 }
+
+.sep-h{
+    border-top: 3px solid #ff00dd;
+    border-radius: 5px;
+}
+
+
+
 .logo-sticky{
     margin: auto;
 }
@@ -83,6 +104,8 @@ margin-right: 10px;
     display: block;
     background-color: rgba(24, 0, 56, 0.25);
     border-radius: 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .Skills-Container .progressbar{
@@ -124,4 +147,86 @@ align-items: center;
 @keyframes csharp{
     0%{width: 0%;}
     100%{width: 85%;}
+}
+
+.Skills-Container .progressbar .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.Skills-Container .progressbar .GML{
+    width: 0%;
+    animation: 2s GML forwards;
+}
+@keyframes GML{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+
+.Skills-Container .progressbar .C4D{
+    width: 0%;
+    animation: 2s C4D forwards;
+}
+@keyframes C4D{
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+.Skills-Container .progressbar .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+@keyframes java{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.Skills-Container .progressbar .cpp{
+    width: 0%;
+    animation: 2s cpp forwards;
+}
+@keyframes cpp{
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+
+.Skills-Container .progressbar .office{
+    width: 0%;
+    animation: 2s office forwards;
+}
+@keyframes office{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.bg-black{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    
+}
+
+.btn-outline-danger {
+margin: auto;
+}
+
+.myform input{
+    background-color: #131517;
+}
+
+.img-center{
+    margin: auto;
+}
+
+.roundvideo{
+    border-radius: 25px;
+}
+
+.myfooter{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }

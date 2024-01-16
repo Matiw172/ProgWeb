@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <meta name="description" content="Portafolio MTT Projects">
+    <title>MTT projects - Portafolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="carousel-test.css">
+    <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,19 +27,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="col navbar-nav justify-content-around align-items-center mynavbar">
                         <li class="nav-item active">
-                            <a class="nav-link front-link" href="#">Sobre mi</a>
+                            <a class="nav-link front-link h6" href="#">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link front-link" href="#projects">Proyectos</a>
+                            <a class="nav-link front-link h6" href="#projects">Proyectos</a>
                         </li>
                         <a class="navbar-brand" href="#">
                             <img src="" width="" height="100" class="p-0 m-0">
                         </a>
                         <li class="nav-item">
-                            <a class="nav-link front-link" href="#">Donaciones</a>
+                            <a class="nav-link front-link h6" href="#donations">Donaciones</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link front-link" href="#">Contactos</a>
+                            <a class="nav-link front-link h6" href="#contact">Contactos</a>
                         </li>
                     </ul>
                 </div>
@@ -46,127 +48,370 @@
         <a href="#"><img class="fixed-top logo-sticky" src="images/LOGO.png" width="100"></a>
     </div>
 
-    <section id="aboutme" class=" row align-items-end p-5">
-        <div class="col-4 con-photo">
-            <img src="images/me.png" alt="" width="100%">
-        </div>
-        <div class="col bg-dark-25 text-light p-3 d-flex flex-row">
-            <div class="container-info">
-                <div class="h1 text-center m-0 p-0">Mateo Alvarado</div>
-                <p class="font-monospace text-center m-0 p-0">Desarrollador</p>
-                <br>
-                <div class="h2">Sobre mi</div>
-                <p class="font-monospace about-text">Soy un joven al que le gustó la programación desde los 17 años,
-                    empecé con el desarrollo de pequeños videojuegos hechos en GameMaker Studio 1.4, luego pasé a
-                    GameMaker Studio 2 y Unity <i class="fa-brands fa-unity"></i>. Actualmente manejo mucho mejor
-                    Unity
-                    y el lenguaje de programación C#.</p>
-                <div class="Skills-Container d-flex flex-row">
-                    <div class="skill-c1">
-                        <div class="progressbar">
-                            <span class="font-monospace name">C#</span>
-                            <div class="bar-back">
-                                <div class="bar-fill csharp"></div>
+    <section id="aboutme" class="">
+        <div class="row p-4">
+            <div class="col-md-4 col-sm-12 con-photo">
+                <img src="images/me.png" alt="" width="100%">
+            </div>
+            <div class="col-md-8 col-sm-12 bg-dark-25 text-light p-3 d-flex flex-row">
+                <div class="container-info">
+                    <div class="h1 text-center m-0 p-0">Mateo Alvarado</div>
+                    <p class="font-monospace text-center m-0 p-0">Desarrollador</p>
+                    <br>
+                    <div class="h2">Sobre mi</div>
+                    <p class="font-monospace .fs-6 text about-text">Soy un joven al que le gustó la programación desde los 17 años,
+                        empecé con el desarrollo de pequeños videojuegos hechos en GameMaker Studio 1.4, luego pasé a
+                        GameMaker Studio 2 y Unity <i class="fa-brands fa-unity"></i>. Actualmente manejo mucho mejor
+                        Unity
+                        y el lenguaje de programación C#.</p>
+                    <p class="font-monospace .fs-6 text about-text">Actualmente estoy cursando la carrera de Desarrollo de
+                        software, en la cual adquiri bastantes conocimientos en el area de desarrollo de programas y
+                        aplicaciones.</p>
+                    <div class="Skills-Container d-flex flex-row row justify-content-around align-items-stretch">
+                        <div class="col-md-5 col-sm-11 skill-c1">
+                            <div class="progressbar">
+                                <span class="font-monospace name">C#</span>
+                                <div class="bar-back">
+                                    <div class="bar-fill csharp"></div>
+                                </div>
+                                <span class="per-num">85%</span>
                             </div>
-                            <span class="per-num">85%</span>
-                        </div>
-                        <div class="progressbar">
-                            <span class="font-monospace name">Python</span>
-                            <div class="bar-back">
-                                <div class="bar-fill python"></div>
+                            <div class="progressbar">
+                                <span class="font-monospace name">Python</span>
+                                <div class="bar-back">
+                                    <div class="bar-fill python"></div>
+                                </div>
+                                <span class="per-num">60%</span>
                             </div>
-                            <span class="per-num">60%</span>
-                        </div>
-                        <div class="progressbar">
-                            <span class="font-monospace name">GML</span>
-                            <div class="bar-back">
-                                <div class="bar-fill GML"></div>
+                            <div class="progressbar">
+                                <span class="font-monospace name">GML</span>
+                                <div class="bar-back">
+                                    <div class="bar-fill GML"></div>
+                                </div>
+                                <span class="per-num">90%</span>
                             </div>
-                            <span class="per-num">90%</span>
-                        </div>
-                        <div class="progressbar">
-                            <span class="font-monospace name">C4D</span>
-                            <div class="bar-back">
-                                <div class="bar-fill C4D"></div>
+                            <div class="progressbar">
+                                <span class="font-monospace name">C4D</span>
+                                <div class="bar-back">
+                                    <div class="bar-fill C4D"></div>
+                                </div>
+                                <span class="per-num">55%</span>
                             </div>
-                            <span class="per-num">55%</span>
-                        </div>
 
-                    </div>
-                    <div class="skill-c1">
-                        <div class="progressbar">
-                            <span class="font-monospace name">Python</span>
-                            <div class="bar-back">
-                                <div class="bar-fill java"></div>
+                        </div>
+                        <div class="col-md-5 col-sm-11 skill-c1">
+                            <div class="progressbar">
+                                <span class="font-monospace name">Java</span>
+                                <div class="bar-back">
+                                    <div class="bar-fill java"></div>
+                                </div>
+                                <span class="per-num">85%</span>
                             </div>
-                            <span class="per-num">50%</span>
+
+                            <div class="progressbar">
+                                <span class="font-monospace name">C++</span>
+                                <div class="bar-back">
+                                    <div class="bar-fill cpp"></div>
+                                </div>
+                                <span class="per-num">25%</span>
+                            </div>
+
+                            <div class="progressbar">
+                                <span class="font-monospace name">Office</span>
+                                <div class="bar-back">
+                                    <div class="bar-fill office"></div>
+                                </div>
+                                <span class="per-num">85%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="sep"></div>
-            <div class="container-socials d-flex flex-column justify-content-around align-items-center">
-                <a target=”_blank” href="https://www.facebook.com/Matiw172"><i
-                        class="fa-brands fa-facebook logo-size1 "></i></a>
-                <a target=”_blank” href="https://www.youtube.com/@matiw172"><i
-                        class="fa-brands fa-youtube logo-size1 "></i></a>
-                <a target=”_blank” href="https://github.com/Matiw172">
-                    <i class="fa-brands fa-github logo-size1 "></i></a>
-                <a target=”_blank” href="https://mtt-projects.itch.io/"><i
-                        class="fa-brands fa-itch-io logo-size1 "></i></a>
-                <a target=”_blank” href="https://steamcommunity.com/profiles/76561198967285956/"><i
-                        class="fa-brands fa-steam logo-size1 "></i></a>
+                <div class="sep"></div>
+                <div class="container-socials d-flex flex-column justify-content-around align-items-center">
+                    <a target=”_blank” href="https://www.facebook.com/Matiw172"><i
+                            class="fa-brands fa-facebook logo-size1 "></i></a>
+                    <a target=”_blank” href="https://www.youtube.com/@matiw172"><i
+                            class="fa-brands fa-youtube logo-size1 "></i></a>
+                    <a target=”_blank” href="https://github.com/Matiw172">
+                        <i class="fa-brands fa-github logo-size1 "></i></a>
+                    <a target=”_blank” href="https://mtt-projects.itch.io/"><i
+                            class="fa-brands fa-itch-io logo-size1 "></i></a>
+                    <a target=”_blank” href="https://steamcommunity.com/profiles/76561198967285956/"><i
+                            class="fa-brands fa-steam logo-size1 "></i></a>
 
+                </div>
             </div>
-        </div>
         </div>
     </section>
+
     <section id="projects">
-        <h2>Mis Proyectos</h2>
-        <div class="container d-flex justify-content-around">
-            <div class="card text-bg-dark" style="width: 25rem;">
-                <div class="slider">
-                    <div class="slide-track">
-                        <div class="slide">
-                            <img src="/images/romanceAcademy/gf-0.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="slide">
-                            <img src="/images/romanceAcademy/gf-0.5.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="slide">
-                            <img src="/images/romanceAcademy/gf-1.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="slide">
-                            <img src="/images/romanceAcademy/gf-2.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="slide">
-                            <img src="/images/romanceAcademy/gf-3.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="slide">
-                            <img src="/images/romanceAcademy/gf-0.png" alt="...">
+        <div class="sep-h"></div>
+        <div class="p-5 mt-5">
+            <h2 class="text-light">Mis Proyectos:</h2>
+            <p class="h4 text-light">Aqui algunos de los proyectos en los que eh trabajado a lo largo de mi vida:
+            </p>
+            <div class="d-flex justify-content-around row row-cols-3 align-content-center">
+                <div class="card text-light m-2 p-0 col" style="width: 25rem; background-color: rgba(0, 0, 0, 0.75);">
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src="/images/romanceAcademy/gf-0.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/romanceAcademy/gf-0.5.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/romanceAcademy/gf-1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/romanceAcademy/gf-2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/romanceAcademy/gf-3.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/romanceAcademy/gf-0.png" alt="...">
+                            </div>
                         </div>
                     </div>
+                    <div class="card-body">
+                        <h5 class="card-title m-0 p-0">Romance Academy 7</h5>
+                        <p class="">Gamemaker Studio 2</p>
+                        <p class="card-text">Proyecto de traer a la realidad el videojuego de Gravity Falls, que
+                            desarrolle en 2019 y quedo en una DEMO.</p>
+
+                        <div class="d-flex flex-row justify-content-around ">
+                            <a target="_blank" href="https://mtt-projects.itch.io/romance-academy-7"
+                                class="btn btn-outline-danger">Itch.io <i class="fa-brands fa-itch-io"></i></a>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+
+                <div class="card text-light m-2 p-0 col" style="width: 25rem; background-color: rgba(0, 0, 0, 0.75);">
+                    <div class="slider">
+                        <img src="/images/swarms2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title m-0 p-0">Swarms Invasion</h5>
+                        <p class="">Unity engine</p>
+                        <p class="card-text">Videojuego que realize para competir en la ScoreSpace Jam de itch.io, y mi
+                            primer proyecto hecho en Unity Engine.</p>
+
+                        <div class="d-flex flex-row justify-content-around ">
+                            <a target="_blank" href="https://mtt-projects.itch.io/swarms-invasion"
+                                class="btn btn-outline-danger">Itch.io <i class="fa-brands fa-itch-io"></i></a>
+                        </div>
+
+                    </div>
                 </div>
+
+                <div class="card text-light m-2 p-0 col" style="width: 25rem; background-color: rgba(0, 0, 0, 0.75);">
+                    <div class="slider">
+                        <div class="slide-track-6">
+                            <div class="slide-6">
+                                <img src="/images/ffps3d/0.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide-6">
+                                <img src="/images/ffps3d/0.5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide-6">
+                                <img src="/images/ffps3d/1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide-6">
+                                <img src="/images/ffps3d/2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide-6">
+                                <img src="/images/ffps3d/3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide-6">
+                                <img src="/images/ffps3d/4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide-6">
+                                <img src="/images/ffps3d/0.jpg" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title m-0 p-0">Freddy Fazbear Pizzeria Simulator 3D</h5>
+                        <p class="text-danger m-0 p-0">En desarrollo</p>
+                        <p class="">Unity engine</p>
+                        <p class="card-text">Recreacion del videojuego de Freddy Fazbear pizzeria simulator de Scott
+                            Cawthon, pero en 3D y FreeRoam. Aun esta en desarrollo.</p>
+                        <div class="d-flex flex-row justify-content-around">
+                            <a target="_blank"
+                                href="https://www.mediafire.com/file/nvpjt3rcf51wxri/Freddy_Fazbear_Pizzeria_Simulator_3D.zip/file"
+                                class="btn btn-outline-danger">Mediafire <i class="fa-brands fa-mediafire"></i></a>
+                            <a target="_blank"
+                                href="https://store.steampowered.com/app/738060/Freddy_Fazbears_Pizzeria_Simulator/"
+                                class="btn btn-outline-danger">Original en <i class="fa-brands fa-steam"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card text-light m-2 p-0 col" style="width: 25rem; background-color: rgba(0, 0, 0, 0.75);">
+                    <div class="slider">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src="/images/deltatranslate/1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/deltatranslate/2.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/deltatranslate/3.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/deltatranslate/4.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/deltatranslate/5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="slide">
+                                <img src="/images/deltatranslate/1.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title m-0 p-0 col">Deltarune Capítulo 2 en Español.</h5>
+                        <p class="">Undertale mod tool / Gamemaker Studio 2</p>
+                        <p class="card-text">Aporte como programador en la traduccion del capitulo 2 de Deltarune.</p>
+
+                        <div class="d-flex flex-row justify-content-around">
+                            <a target="_blank" href="https://youtu.be/iI0ALcEW-Wo"
+                                class="btn btn-outline-danger">Trailer en
+                                <i class="fa-brands fa-youtube"></i></a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="card text-light m-2 p-0 col" style="width: 25rem; background-color: rgba(0, 0, 0, 0.75);">
+                    <div class="slider">
+                        <img src="/images/kittyrun2.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title m-0 p-0">Kitty Run Run</h5>
+                        <p class="">Unity engine</p>
+                        <p class="card-text">Videojuego echo para un proyecto de tercer semestre en mi instituto, esta
+                            conectado a una base de datos en firebase y tiene scoreboard global.</p>
+
+                        <div class="d-flex flex-row justify-content-around ">
+                            <a target="_blank" href="https://mtt-projects.itch.io/kitty-kitty-run"
+                                class="btn btn-outline-danger">Itch.io <i class="fa-brands fa-itch-io"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card text-light m-2 p-0 col" style="width: 25rem; background-color: rgba(0, 0, 0, 0.75);">
+                    <div class="slider">
+                        <img src="/images/mtt-manager/1.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title m-0 p-0">MTT Manager</h5>
+                        <p class="">Visual Studio 2022</p>
+                        <p class="card-text">Programa desarrollado para administrar el videojuego de Kitty RunRun, fue
+                            desarrollada a la par que el videojuego y permite realizar cambios de puntajes, registro y
+                            elminacion de jugadores y es portable.</p>
+                        <div class="d-flex flex-row justify-content-around ">
+                            <a target="_blank" href="https://github.com/MTT-Projects/MTT-Manager"
+                                class="btn btn-outline-danger">GitHub <i class="fa-brands fa-github"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card text-light m-2 p-0 col" style="width: 25rem; background-color: rgba(0, 0, 0, 0.75);">
+                    <div class="slider">
+                        <img src="/images/tamagotchi.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title m-0 p-0">MLP Tamagotchi</h5>
+                        <p class="">NetBeans Java</p>
+                        <p class="card-text">Programa desarrollado en segundo semestre con Java en la IDE de NetBeans,
+                            el programa es un tamagotchi de Flutteshy de MLP, ademas de contener algunos otras
+                            aplicaciones en un escritorio interno.</p>
+                        <div class="d-flex flex-row justify-content-around ">
+                            <a target="_blank" href="https://github.com/Matiw172/Programa-POO-2BV"
+                                class="btn btn-outline-danger">GitHub <i class="fa-brands fa-github"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </section>
-    <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>¡Hola de nuevo! Aquí puedes escribir algo sobre ti mismo.</p>
+
+    <section id="donations">
+        <div class="sep-h"></div>
+        <div class="text-light p-5 mt-5">
+            <h2>Donaciones</h2>
+            <div class="d-flex flex-row">
+                <p class="h1">¿Quieres Apoyarme?⠀</p>
+                <p class="h1 text-danger">¡DAME TU DINERO!</p>
+            </div>
+            <div class="row p-3 ">
+                <div class="col-sm-12 col-md-5">
+                    <video class="roundvideo" src="/images/damedinero.mp4" width="100%" controls></video>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <div class="row row-cols-2 d-flex justify-content-around">
+                        <div class="p-3 bg-dark-25 col-5">
+                            <p class="h2 text-center">Paypal</p>
+                            <a class="d-flex align-content-center justify-content-center"
+                                href="https://paypal.me/matiualvarado" target="_blank"><img class="img-center"
+                                    src="images/paypal.png" width="100%"></a>
+                        </div>
+                        <div class="p-3 bg-dark-25 col-5 ">
+                            <p class="h2 text-center">Buy me a Coffee</p>
+                            <a class="d-flex align-content-center justify-content-center" href="" target="_blank"><img
+                                    class="img-center" src="images/buymeacoffe.png" width="100%"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <p class="h5">Tus donaciones me ayudaran a seguir con mis proyectos.</p>
+                <p class="h1 text-danger-emphasis">Y comprar peluches de My Little Pony</p>
+            </div>
+        </div>
     </section>
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme en: [tu correo electrónico]</p>
+    <div class="sep-h"></div>
+    <section id="contact" class="container bg-dark-25 p-5 text-light mt-5">
+
+        <p class="h1">¿Necesitas mas informacion?</p>
+        <h2>Enviame un un mensaje:</h2>
+        <form action="https://formsubmit.co/matiw.alva172@gmail.com" method="POST" class="row g-3 ">
+            <div class="col-md-6">
+                <label for="inputName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputName">
+            </div>
+            <div class="col-md-6">
+                <label for="inputLastName" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="inputLastName">
+            </div>
+            <div class="col-12">
+                <label for="inputMail" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="inputMail" placeholder="yourmail@test.com">
+            </div>
+            <div class="col-md-6">
+                <label for="inputMessage" class="form-label">Mensaje</label>
+                <textarea type="text" class="form-control" id="inputMessage" placeholder="..."
+                    style="height: 205px;"></textarea>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
     </section>
-    <footer>
-        <p>Derechos de autor © 2022</p>
+    <footer class="bg-black text-light myfooter text-center mt-3 p-2">
+        <p class="h6">MTT Projects © 2024</p>
     </footer>
 </body>
 
