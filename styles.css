@@ -1,0 +1,127 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(234, 0, 255, 0.25) .1em, transparent .1em), linear-gradient(90deg, rgba(234, 0, 255, 0.25) .1em, transparent .1em);
+    background-size: 10em 10em;
+  }
+
+
+
+.only-pc{
+
+    visibility: hidden;
+}
+
+.bg-dark-25{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.front-link{
+z-index: 1035;
+}
+
+.logo-sticky {
+    display: flex;
+    position: sticky;
+    z-index: 0;
+}
+
+
+.con-photo{
+    display: flex;
+    border-radius: 25px;
+}
+
+.con-photo img{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.about-text{
+    width: 95%;
+}
+
+.container-info{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container-social{
+margin-left: 10px;
+margin-right: 10px;
+}
+.navbar {
+    z-index: 1035; /* Asegúrate de que es menor que el z-index del logo */
+}
+
+.sep{
+    border-left: 2px solid white;
+    height: 100%;
+}
+.logo-sticky{
+    margin: auto;
+}
+
+.logo-size1{
+    font-size: xxx-large;
+    color:white;
+    transition: 0.3s;
+}
+
+.logo-size1:hover{
+    color:gray;
+}
+
+
+.skill-c1{
+    width: 50%;
+    display: block;
+    background-color: rgba(24, 0, 56, 0.25);
+    border-radius: 10px;
+}
+
+.Skills-Container .progressbar{
+display: flex;
+align-items: center;
+}
+
+.Skills-Container .progressbar .name{
+    width: 25%;
+}
+
+.Skills-Container .progressbar span{
+    padding: 10px;
+}
+
+.Skills-Container .progressbar .bar-back{
+    display: flex;
+    height: 5px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.Skills-Container .progressbar .bar-fill{
+    background-color: rgb(255, 0, 170);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.Skills-Container .progressbar .csharp{
+    width: 0%;
+    animation: 2s csharp forwards;
+}
+
+@keyframes csharp{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}

@@ -1,0 +1,33 @@
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(100% * 6); /* 5 imágenes originales + 1 copia */
+    animation: scroll 30s linear infinite;
+}
+
+.slide {
+    width: calc(100% / 6); /* 5 imágenes originales + 1 copia */
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    83.333% { /* 100% / 6 = 16.666%, entonces 100% - 16.666% = 83.333% */
+        transform: translateX(-83.333%);
+    }
+    100% {
+        transform: translateX(-83.333%);
+    }
+}
