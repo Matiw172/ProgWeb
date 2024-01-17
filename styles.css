@@ -37,14 +37,36 @@ z-index: 1035;
 }
 
 
-.con-photo{
+.con-photo {
     border-radius: 25px;
+    position: relative;
+    overflow: hidden; /* Asegúrate de que los excesos de la imagen no sean visibles */
 }
 
-.con-photo img{
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
+.con-photo .photo {
+    position: relative;
+    background-color: rgba(0, 0, 0,0.5);
+border-radius: 25px;
 }
+
+.con-photo .mrX {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Inicia sin mostrar la imagen */
+animation: load-image-mrX 2s steps(7) forwards; /* Ajusta la duración y los 'steps' según lo deseado */
+}
+
+@keyframes load-image-mrX {
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Revela completamente la imagen */
+    }
+}
+
+
+
+
 
 .about-text{
     width: 95%;
@@ -235,3 +257,5 @@ margin: auto;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
 }
+
+
