@@ -41,7 +41,7 @@
 .slide-track-6 {
     display: flex;
     width: calc(100% * 7); /* 5 imágenes originales + 1 copia */
-    animation: scroll 30s linear infinite;
+    animation: scroll-6 30s linear infinite;
 }
 
 .slide-6 img {
@@ -54,7 +54,7 @@
     flex-shrink: 0;
 }
 
-@keyframes scroll {
+@keyframes scroll-6 {
     0% {
         transform: translateX(0);
     }
