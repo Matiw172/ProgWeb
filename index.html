@@ -7,155 +7,268 @@
     <meta name="description" content="Portafolio MTT Projects">
     <title>MTT projects - Portafolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylephone.css">
     <link rel="stylesheet" href="carousel-test.css">
+    <link rel="stylesheet" href="/css/flickity.css">
+    <link rel="stylesheet" href="/css/video-js.css">
+    <link rel="stylesheet" href="flickity.css">
+    <link href="FOREST.CSS" rel="stylesheet">
+
     <link rel="shortcut icon" href="images/favicon.png">
+    <link href="https://db.onlinewebfonts.com/c/0d7f7710cd9149afde20e022392047c9?family=F29LTAdir-Regular"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7E60702SRW"></script>
+    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-7E60702SRW');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-7E60702SRW');
     </script>
 </head>
 
-<body class="bg-dark ">
-    <div class="mb-5">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="col navbar-nav justify-content-around align-items-center mynavbar">
+<body class="body-bg" style="font-family: 'Open Sans';">
+    <div class="" style="height: 75px;">
+        <div class="announcements-bar">
+            <p class="scroll-text">El desarrollador se acaba de rascar los huevos</p>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top mt-3">
+            <div id="mobileMenu">
+                <div class="d-flex flex-column bg-black" id="navbarNav">
+                    <ul class="navbar-nav justify-content-around align-items-center">
+                        <a class="navbar-brand" href="#">
+                            <img src="" width="" height="50" class="p-0 m-0">
+                        </a>
                         <li class="nav-item active">
-                            <a class="nav-link front-link fw-bold" href="#">Sobre mi</a>
+                            <a class="nav-link front-link nav-selected" href="#">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link front-link fw-bold" href="#projects">Proyectos</a>
+                            <a class="nav-link front-link" href="#projects">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link front-link" href="#donations">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link front-link" href="#contact">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="container-fluid bg-gray-gradient rounded-bottom-5 " style="height: 55px;">
+                <div class="c-12 collapse navbar-collapse" id="navbarNav">
+                    <ul class="col navbar-nav justify-content-around align-items-center mynavbar">
+                        <li class="nav-item active">
+                            <a class="nav-link front-link nav-selected" href="#">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link front-link" href="#projects">Blog</a>
                         </li>
                         <a class="navbar-brand" href="#">
                             <img src="" width="" height="100" class="p-0 m-0">
                         </a>
                         <li class="nav-item">
-                            <a class="nav-link front-link fw-bold" href="#donations">Donaciones</a>
+                            <a class="nav-link front-link" href="#donations">Acerca de</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link front-link fw-bold" href="#contact">Contactos</a>
+                            <a class="nav-link front-link" href="#contact">Contactos</a>
                         </li>
                     </ul>
                 </div>
+
+                <a class="header-icon" href="index.html"><img class="fixed-top logo-sticky" src="images/logo-back.png" width="100"></a>
             </div>
         </nav>
-        <a href="#"><img class="fixed-top logo-sticky" src="images/LOGO.png" width="100"></a>
+        <a class="header-icon" id="headerBT" href="index.html"><img class="logo-sticky" src="images/MTT_Logo.png" width="100"></a>
+        <img class="collapse-arrow" src="images/arrow.png">
+
+    </div>
+    <div id="headerFix">
+
     </div>
 
-    <section id="aboutme" class="">
-        <div class="row p-4">
-            <div class="col-md-4 col-sm-12 con-photo">
-                <img class="photo" src="images/me.png" alt="" width="100%">
-                <img class="mrX" src="images/mrX.png" alt="" width="100%">
-            </div>
-            <div class="col-md-8 col-sm-12 bg-dark-25 text-light p-3 d-flex flex-row">
-                <div class="container-info">
-                    <div class="h1 text-center m-0 p-0">Mateo Alvarado</div>
-                    <p class="font-monospace text-center m-0 p-0">Desarrollador</p>
-                    <br>
-                    <div class="h2">Sobre mi</div>
-                    <p class="font-monospace .fs-6 text about-text">Soy un joven al que le gustó la programación desde
-                        los 17 años,
-                        empecé con el desarrollo de pequeños videojuegos hechos en GameMaker Studio 1.4, luego pasé a
-                        GameMaker Studio 2 y Unity <i class="fa-brands fa-unity"></i>. Actualmente manejo mucho mejor
-                        Unity
-                        y el lenguaje de programación C#.</p>
-                    <p class="font-monospace .fs-6 text about-text">Actualmente estoy cursando la carrera de Desarrollo
-                        de
-                        software, en la cual adquirí bastantes conocimientos en el área de desarrollo de programas y
-                        aplicaciones.</p>
-                    <div class="Skills-Container d-flex flex-row row justify-content-around align-items-stretch">
-                        <div class="col-md-11 col-lg-5 col-sm-11 skill-c1">
-                            <div class="progressbar">
-                                <span class="font-monospace name">C#</span>
-                                <div class="bar-back">
-                                    <div class="bar-fill csharp"></div>
-                                </div>
-                                <span class="per-num">90%</span>
-                            </div>
-                            <div class="progressbar">
-                                <span class="font-monospace name">Python</span>
-                                <div class="bar-back">
-                                    <div class="bar-fill python"></div>
-                                </div>
-                                <span class="per-num">60%</span>
-                            </div>
-                            <div class="progressbar">
-                                <span class="font-monospace name">GML</span>
-                                <div class="bar-back">
-                                    <div class="bar-fill GML"></div>
-                                </div>
-                                <span class="per-num">90%</span>
-                            </div>
-                            <div class="progressbar">
-                                <span class="font-monospace name">C4D</span>
-                                <div class="bar-back">
-                                    <div class="bar-fill C4D"></div>
-                                </div>
-                                <span class="per-num">55%</span>
-                            </div>
-
-                        </div>
-                        <div class="col-md-11 col-lg-5 col-sm-11 skill-c1">
-                            <div class="progressbar">
-                                <span class="font-monospace name">Java</span>
-                                <div class="bar-back">
-                                    <div class="bar-fill java"></div>
-                                </div>
-                                <span class="per-num">85%</span>
-                            </div>
-
-                            <div class="progressbar">
-                                <span class="font-monospace name">C++</span>
-                                <div class="bar-back">
-                                    <div class="bar-fill cpp"></div>
-                                </div>
-                                <span class="per-num">25%</span>
-                            </div>
-
-                            <div class="progressbar">
-                                <span class="font-monospace name">Office</span>
-                                <div class="bar-back">
-                                    <div class="bar-fill office"></div>
-                                </div>
-                                <span class="per-num">85%</span>
-                            </div>
+    <div id="principalContainer" class="principalContainer row d-flex justify-content-end">
+        <div id="proyectBrowser" class="proyect-browser">
+            <div class="timeline">
+                <a href="#proyect1" class="scroll-link front-link">
+                    <div class="timeline-point timeline-point-selected">
+                        <div class="point-title">
+                            <p>Romance Academy 7</p>
                         </div>
                     </div>
-                </div>
-                <div class="sep"></div>
-                <div class="container-socials d-flex flex-column justify-content-around align-items-center">
-                    <a target=”_blank” href="https://www.facebook.com/Matiw172"><i
-                            class="fa-brands fa-facebook logo-size1 "></i></a>
-                    <a target=”_blank” href="https://www.youtube.com/@matiw172"><i
-                            class="fa-brands fa-youtube logo-size1 "></i></a>
-                    <a target=”_blank” href="https://github.com/Matiw172">
-                        <i class="fa-brands fa-github logo-size1 "></i></a>
-                    <a target=”_blank” href="https://mtt-projects.itch.io/"><i
-                            class="fa-brands fa-itch-io logo-size1 "></i></a>
-                    <a target=”_blank” href="https://steamcommunity.com/profiles/76561198967285956/"><i
-                            class="fa-brands fa-steam logo-size1 "></i></a>
-
-                </div>
+                </a>
+                <a href="#proyect2" class="scroll-link">
+                    <div class="timeline-point">
+                        <div class="point-title">
+                            <p>Titulo Proyecto 2</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#project1" class="scroll-link">
+                    <div class="timeline-point">
+                        <div class="point-title">
+                            <p>Titulo Proyecto 1</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#project1" class="scroll-link">
+                    <div class="timeline-point">
+                        <div class="point-title">
+                            <p>Titulo Proyecto 1</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#project1" class="scroll-link">
+                    <div class="timeline-point">
+                        <div class="point-title">
+                            <p>Titulo Proyecto 1</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#project1" class="scroll-link">
+                    <div class="timeline-point">
+                        <div class="point-title">
+                            <p>Titulo Proyecto 1</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#project1" class="scroll-link">
+                    <div class="timeline-point">
+                        <div class="point-title">
+                            <p>Titulo Proyecto 1</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#project1" class="scroll-link">
+                    <div class="timeline-point">
+                        <div class="point-title">
+                            <p>Titulo Proyecto 1</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#project1" class="scroll-link">
+                    <div class="timeline-point">
+                        <div class="point-title">
+                            <p>Titulo Proyecto 1</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#project1" class="scroll-link">
+                    <div class="timeline-point">
+                        <div class="point-title">
+                            <p>Titulo Proyecto 1</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="#project1" class="scroll-link">
+                    <div class="timeline-point">
+                        <div class="point-title">
+                            <p>Titulo Proyecto 1</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
-    </section>
 
+        <div id="proyectViewer" class="col-11">
+            <section id="proyect1">
+                <div class="row d-flex justify-content-around align-items-stretch p-4">
+                    <div id="projectcolumn1" class="bg-dark-25 text-light p-2 d-flex flex-row">
+                        <div class="container-info">
+                            <div class="h3 text-center m-0 p-0">Proyect Title</div>
+                            <div class="main-gallery">
+                                <div class="carousel" data-flickity='{ "draggable": false, "wrapAround": true}'>
+
+                                    <video id="my-video" class="carousel-cell video-js vjs-16-9 vjs-theme-forest"
+                                        controls controlsList="nofullscreen" preload="auto" width="auto" height="auto"
+                                        poster="images/video poster.png" data-setup="{}">
+                                        <source src="images/Undertale - Release Trailer - Nintendo Switch.mp4"
+                                            type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a
+                                            web browser that
+                                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports
+                                                HTML5 video</a>
+                                        </p>
+                                    </video>
+
+                                    <img src="images/swarms2.png" class="carousel-cell" alt="">
+
+                                    <div class="carousel-cell"></div>
+                                    <div class="carousel-cell"></div>
+                                    <div class="carousel-cell"></div>
+                                </div>
+                            </div>
+                            <p class="font-monospace .fs-6 text about-text">Actualmente estoy cursando la carrera de
+                                Desarrollo
+                                de
+                                software, en la cual adquirí bastantes conocimientos en el área de desarrollo de
+                                programas y
+                                aplicaciones.</p>
+                        </div>
+                    </div>
+
+                    <div id="projectcolumn2" class="bg-dark-25 align-self-stretch">
+                        <div class="h3">Project Title</div>
+                    </div>
+                </div>
+            </section>
+            <section id="proyect2">
+                <div class="row d-flex justify-content-around align-items-stretch p-4">
+                    <div id="projectcolumn1" class="bg-dark-25 text-light p-2 d-flex flex-row">
+                        <div class="container-info">
+                            <div class="h3 text-center m-0 p-0">Proyect Title</div>
+                            <div class="main-gallery">
+                                <div class="carousel" data-flickity='{ "draggable": false, "pageDots": true}'>
+
+                                    <video id="my-video" class="carousel-cell video-js vjs-16-9 vjs-theme-forest"
+                                        controls preload="auto" width="auto" height="auto"
+                                        poster="images/video poster.png" data-setup="{}">
+                                        <source src="images/Undertale - Release Trailer - Nintendo Switch.mp4"
+                                            type="video/mp4" />
+                                        <p class="vjs-no-js">
+                                            To view this video please enable JavaScript, and consider upgrading to a
+                                            web browser that
+                                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports
+                                                HTML5 video</a>
+                                        </p>
+                                    </video>
+
+                                    <img src="images/swarms2.png" class="carousel-cell" alt="">
+
+                                    <div class="carousel-cell"></div>
+                                    <div class="carousel-cell"></div>
+                                    <div class="carousel-cell"></div>
+                                </div>
+                            </div>
+                            <p class="font-monospace .fs-6 text about-text">Actualmente estoy cursando la carrera de
+                                Desarrollo
+                                de
+                                software, en la cual adquirí bastantes conocimientos en el área de desarrollo de
+                                programas y
+                                aplicaciones.</p>
+                        </div>
+                    </div>
+
+                    <div id="projectcolumn2" class="bg-dark-25 align-self-stretch">
+                        <div class="h3">Project Title</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     <section id="projects">
         <div class="sep-h"></div>
         <div class="p-5 mt-5">
@@ -478,7 +591,16 @@
                 <div class="col-sm-12 col-md-5">
                     <p class="col h1 text-danger text-center">¡DAME TU DINERO!</p>
 
-                    <video class="roundvideo" src="/images/damedinero.mp4" width="100%" controls></video>
+                    <video id="my-video" class="video-js vjs-theme-forest" controls preload="auto" width="auto"
+                        height="auto" poster="images/video poster.png" data-setup="{}">
+                        <source src="images/Undertale - Release Trailer - Nintendo Switch.mp4" type="video/mp4" />
+                        <p class="vjs-no-js">
+                            To view this video please enable JavaScript, and consider upgrading to a
+                            web browser that
+                            <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                        </p>
+                    </video>
+
                 </div>
                 <div class="col-sm-12 col-md-7">
                     <p class="col h1 text-center">¿Quieres Apoyarme?⠀</p>
@@ -535,6 +657,13 @@
     <footer class="bg-black text-light myfooter text-center mt-3 p-1">
         <p class="h6">MTT Projects © 2024</p>
     </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/flickity.pkgd.min.js"></script>
+    <script src="js/video.min.js"></script>
+    <script src="js/hrefs.js"></script>
+    <script src="js/video-proyect.js"></script>
+    <script src="js/header.js"></script>
 </body>
 
 </html>
