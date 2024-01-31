@@ -20,37 +20,7 @@ player.on('dblclick', function(e) {
 });
 
 
-function onResize() {
-document.addEventListener("DOMContentLoaded", function() {
-    var galleries = document.querySelectorAll('.main-gallery');
 
-    galleries.forEach(gallery => {
-        var dots = gallery.querySelector('.flickity-page-dots');
-        var carousel = gallery.querySelector('.carousel');
-
-        if (dots && carousel) {
-            // Mover los puntos al final del body o a otro contenedor adecuado
-            document.body.appendChild(dots);
-
-            // Función para actualizar la posición de los puntos
-            var updateDotsPosition = function() {
-                var rect = carousel.getBoundingClientRect();
-                dots.style.position = 'absolute';
-                dots.style.top = rect.bottom + 'px'; // Posición justo debajo del carrusel
-                dots.style.left = rect.left + 'px'; // Alineado con el lado izquierdo del carrusel
-                dots.style.width = carousel.offsetWidth + 'px'; // Mismo ancho que el carrusel
-                dots.style.zIndex = '10'; // Asegúrate de que los puntos estén por encima de otros elementos
-            };
-
-            // Actualizar la posición de los puntos al cargar y al cambiar el tamaño de la ventana
-            updateDotsPosition();
-            window.addEventListener('resize', updateDotsPosition);
-        }
-    });
-});
-}
-
-onResize();
 
 document.addEventListener("DOMContentLoaded", function() {
     var flkty = new Flickity('.carousel', {
