@@ -35,6 +35,8 @@
 
         gtag('config', 'G-7E60702SRW');
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="body-bg column align-items-end" style="font-family: 'Open Sans';">
@@ -97,51 +99,56 @@
     <div id="headerFix" style="height: 70px;">
 
     </div>
-    <section id="contact">
-        <div class="row text-light form-container mt-5">
-            <div class="col-sm-12 col-md-3 justify-content-center supportscroll">
-                <p class="col h1 text-center font-weight-bold">¿Quieres Apoyarme?⠀</p>
-                <div class="infinite-carousel">
-                    <div class="viewport">
-                        <div class='list'>
-                            <div class="p-3 bg-dark-25 item">
-                                <a class="d-flex align-content-center justify-content-center"
-                                    href="https://paypal.me/matiualvarado" target="_blank"><img class="img-center"
-                                        src="images/paypal.png" width="100%"></a>
-                            </div>
-                            <div class="p-3 bg-dark-25 item">
-                                <a class="d-flex align-content-center justify-content-center"
-                                    href="https://www.buymeacoffee.com/matiw172" target="_blank"><img class="img-center"
-                                        src="images/buymeacoffe.png" width="100%"></a>
-                            </div>
-                            <div class="p-3 bg-dark-25 item">
-                                <a class="d-flex align-content-center justify-content-center"
-                                    href="https://www.patreon.com/MTTProjects" target="_blank"><img class="img-center"
-                                        src="images/patreon.png" width="100%"></a>
-                            </div>
+   <section id="contact">
+    <div class="row text-light form-container mt-5">
+        <div class="col-md-3 col-sm-12 justify-content-center supportscroll">
+            <p class="col h1 text-center font-weight-bold">¿Quieres Apoyarme?⠀</p>
+            <div class="infinite-carousel">
+                <div class="viewport">
+                    <div class='list'>
+                        <div class="p-3 bg-dark-25 item">
+                            <a class="d-flex align-content-center justify-content-center"
+                                href="https://paypal.me/matiualvarado" target="_blank">
+                                <img class="img-center" src="images/paypal.png" width="100%">
+                            </a>
+                        </div>
+                        <div class="p-3 bg-dark-25 item">
+                            <a class="d-flex align-content-center justify-content-center"
+                                href="https://www.buymeacoffee.com/matiw172" target="_blank">
+                                <img class="img-center" src="images/buymeacoffe.png" width="100%">
+                            </a>
+                        </div>
+                        <div class="p-3 bg-dark-25 item">
+                            <a class="d-flex align-content-center justify-content-center"
+                                href="https://www.patreon.com/MTTProjects" target="_blank">
+                                <img class="img-center" src="images/patreon.png" width="100%">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="col-md col-sm-12 bg-dark-25 p-sm-3 p-md-4">
-                <p class="form-title h1 font-weight-bold "><b>FORMULARIO DE CONTACTO</b></p>
-                <form action="https://formsubmit.co/matiw.alva172@gmail.com" method="POST"
-                    class="row g-3 d-flex align-content-end">
+        <div class="col-md col-sm-12 bg-dark-25 p-sm-3 p-md-4">
+            <p class="form-title h1 font-weight-bold">FORMULARIO DE CONTACTO</p>
+                <form action="https://formsubmit.co/matiw.alva172@gmail.com" method="POST" 
+                    class="row g-3 d-flex align-content-end"
+                    onsubmit="handleSubmit(event)">
+                    <input type="hidden" name="_captcha" value="false">
                     <div class="g-3 col-md-10 col-sm-12">
                         <div class="col">
-                            <label for=" inputName" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="inputName" name="name">
+                            <label for="inputName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="inputName" name="name" required>
                         </div>
                         <div class="col">
                             <label for="inputMail" class="form-label">Correo Electrónico</label>
                             <input type="email" class="form-control" id="inputMail" placeholder="yourmail@test.com"
-                                name="email">
+                                name="email" required>
                         </div>
                         <div class="col">
                             <label for="inputMessage" class="form-label">Mensaje</label>
-                            <textarea type="text" class="form-control" id="inputMessage" placeholder="..."
-                                style="height: 300px;" name="message"></textarea>
+                            <textarea class="form-control" id="inputMessage" placeholder="..." style="height: 300px;"
+                                name="message" required></textarea>
                         </div>
                     </div>
                     <div class="col-md col-sm-2 d-flex sendBTCon">
@@ -150,9 +157,10 @@
                         </button>
                     </div>
                 </form>
-            </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <footer id="footer" class="bg-black text-light myfooter align-items-center mt-3 p-1 row d-flex">
         <p class="col h4 copy">Copyright - MTT Projects 2024</p>
@@ -172,5 +180,44 @@
     <script src="js/video-proyect.js"></script>
     <script src="js/header.js"></script>
     <script src='js/scroller.js'></script>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Evita el envío predeterminado del formulario
+
+            const form = event.target;
+
+            fetch(form.action, {
+                method: form.method,
+                body: new FormData(form),
+            })
+            .then(response => {
+                if (response.ok) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Formulario enviado!',
+                        text: 'Tu mensaje ha sido enviado correctamente.',
+                        confirmButtonText: 'Aceptar'
+                    });
+                    form.reset(); // Limpia el formulario
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: 'Hubo un problema al enviar el formulario. Inténtalo nuevamente.',
+                        confirmButtonText: 'Aceptar'
+                    });
+                }
+            })
+            .catch(error => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'Hubo un problema con la conexión. Inténtalo más tarde.',
+                    confirmButtonText: 'Aceptar'
+                });
+            });
+        }
+    </script>
 
 </body>
